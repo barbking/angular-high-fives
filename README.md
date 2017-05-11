@@ -5,15 +5,15 @@ In this assignment, you'll be making a making an app to high-five fictional char
 
 ## Setup
 
-Run `npm install` to get Express. Angular and Bootstrap are included.
+[x]Run `npm install` to get Express. Angular and Bootstrap are included.
 
 ## In the View:
-Display a character image, their name, and something about them (ya know, it's good to have an introduction before high-fiving strangers).
+[]Display a character image, their name, and something about them (ya know, it's good to have an introduction before high-fiving strangers).
 Note: Feel free to use Google to find content or make up your own! Include some images and give it your best styling effort.
 
-Have a button for the user to click to give the character a high five. When clicked, generate a random number between 1 and 10 to compare against the character's high-five skill.
+[]Have a button for the user to click to give the character a high five. When clicked, generate a random number between 1 and 10 to compare against the character's high-five skill.
 
-Display a statement about many high fives the character has successfully completed.
+[]Display a statement about many high fives the character has successfully completed.
 
 ## High Five Logistics
 Randomly generate a high-five skill for your character between 1 and 10. Note: this will mean the character's skill will be different each time the app is run.
