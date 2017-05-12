@@ -17,7 +17,7 @@ myApp.service('GetHits', function(){
     console.log(hitsCounter);
     hitsCounter++;
     return hitsCounter;
-  };
+  }; 
 
   //return random number
   this.randomNum = function randomNum(min, max){

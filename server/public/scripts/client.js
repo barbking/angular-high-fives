@@ -5,7 +5,7 @@ myApp.controller( 'HighFiveController', function(GetHits ){
   // variable global to this controller
   var vm = this;
   // array attached to controller (makes it avilable to DOM)
-  vm.hits = [];
+  // vm.hits = [];
   // "vm" stands for "view model"
   //  vm.count = 0;
    var skill = GetHits.randomNum(1,10);
