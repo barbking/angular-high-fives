@@ -8,22 +8,21 @@ myApp.controller( 'HighFiveController', function(GetHits ){
   vm.hits = [];
   // "vm" stands for "view model"
   //  vm.count = 0;
-   var setRanNum = GetHits.randomNum(1,10);
+   var skill = GetHits.randomNum(1,10);
    var yourHit = '';
-   console.log (setRanNum);
+   console.log (skill);
    console.log (yourHit);
 
    vm.addHit = function(){
      var yourHit = GetHits.randomNum(1,10);
-     if (setRanNum === yourHit) {
+     vm.count = GetHits.counter();
+     console.log('your hit=',yourHit);
+     console.log(yourHit);
+     if (yourHit === skill) {
        vm.description = 'Your Hive Five was right on!!!';
-       vm.count = GetHits.counter();
        vm.hitsCounter = GetHits.hitsCounter();
-       console.log(vm.description);
      } else {
        vm.description = 'Bad aim, try again!';
-       vm.count = GetHits.counter();
-       console.log(vm.description);
      }
    };
   //current count

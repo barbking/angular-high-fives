@@ -1,3 +1,27 @@
-/*button {
-  float:right;
-}*/
+body {
+  background-color: #968888;
+  font-size: 25px;
+  color: black;
+}
+img {
+  margin-left: 100px;
+  float: left;
+  align-content: center;
+}
+h2 {
+margin-left: 50px;
+}
+button {
+  margin: 10px;
+  padding: 5px;
+}
+jumbotron {
+  /*background-color: #5b504a;*/
+  background:transparent;
+}
+.results {
+  margin-top: 100px;
+  /*height: 300px;
+  width: 400px;*/
+  color: blue;
+}

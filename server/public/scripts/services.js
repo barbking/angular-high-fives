@@ -1,37 +1,27 @@
 myApp.service('GetHits', function(){
 
-  var counter = 1;
+  var counter = 0;
   var hitsCounter = 0;
 
+  //counter for all attempts
   this.counter = function (){
-    console.log("counter setter running");
+    console.log("counter running");
     console.log(counter);
-    return counter++;
+    counter++;
+    return counter;
   };
 
+  //counter for successfull high fives
   this.hitsCounter = function (){
-    console.log("counter setter running");
+    console.log("hitsCounter running");
     console.log(hitsCounter);
-    return hitsCounter++;
+    hitsCounter++;
+    return hitsCounter;
   };
 
   //return random number
   this.randomNum = function randomNum(min, max){
   return Math.floor (Math.random() * (1 + max - min) + min);
 };//end rand number
-
-  // return current value of getCounter
-  // this.counterGetter = function(){
-  //   return counter;
-  // };
-
-  // this.counterSetter = function(){
-  //   console.log("counter setter running");
-  //   counter++;
-  // };
-
-  // this.getHits = function(){
-  //   console.log( 'in getHits' );
-  // };
 
 });
