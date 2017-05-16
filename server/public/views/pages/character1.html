@@ -1,0 +1,12 @@
+<h2><button class="btn" ng-click="hf.addHit()">Click to High Five Me!</button></h2>
+
+    <img class="img-rounded" width="400" height="350" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F1funny.com%2Fwp-content%2Fuploads%2F2010%2F08%2Fhi-five-cat.jpg&f=1">
+    <!-- <input type="text" placeholder="name" ng-model="hf.nameIn" /> -->
+
+  <div class="container row results">
+      <div class="col-large-3"><span>Hello!  My Name is: {{ hf.char.name }}</span></div><br>
+      <div class="col-large-3"><span>My skill level: {{ hf.char.skill }}</span></div><br>
+      <div class="col-large-3"><span>Hit results: {{ hf.description }}</span></div><br>
+      <div class="col-large-3">High Five Attempts:{{hf.count}}</div><br>
+      <div class="col-large-3">High Five Count:{{hf.hitsCounter}}</div><br>
+</div>
