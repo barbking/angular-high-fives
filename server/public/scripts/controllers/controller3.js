@@ -5,7 +5,9 @@ myApp.controller( 'HighFiveController3', ['HitsService',function(HitsService){
 
   vm.char = {
     name: 'Panda Man',
-    skill: 'hard'
+    about: 'Known to ask for high-fives but very sneaky and difficult to hit.',
+    skill: 'hard',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfAZGuFBvbM87bxt7oDgxRXahBmaMkvaFtXeMOhoZLePzdNuKl'
   };
 
    var skill = HitsService.randomNum(6,10);

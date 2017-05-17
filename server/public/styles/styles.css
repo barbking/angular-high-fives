@@ -32,6 +32,9 @@ footer{
     font-size: 15px;
     text-align: right;
   }
+  div {
+    text-align: center;
+  }
 .jumbotron {
   /*background-color: #5b504a;*/
   background:transparent;

@@ -4,11 +4,13 @@ myApp.controller('HighFiveController2', ['HitsService', function(HitsService){
   var vm = this;
 
   vm.char = {
-    name: 'Dalai Llama',
-    skill: 'medium'
+    name: 'Bob Cat',
+    about: 'Be prepared to jump high to get a hit with me!',
+    skill: 'medium',
+    image: 'https://images.duckduckgo.com/iu/?u=http%3A%2F%2F1funny.com%2Fwp-content%2Fuploads%2F2010%2F08%2Fhi-five-cat.jpg&f=1'
   };
 
-   var skill = HitsService.randomNum(4,10);
+   var skill = HitsService.randomNum(1,10);
    var yourHit = '';
    console.log (skill);
    console.log (yourHit);

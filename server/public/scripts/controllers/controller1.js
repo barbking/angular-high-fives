@@ -3,14 +3,16 @@ myApp.controller( 'HighFiveController1',['HitsService',function(HitsService){
   // variable global to this controller
   var vm = this;
 
-   var skill = HitsService.randomNum(1,10);
+   var skill = HitsService.randomNum(4,10);
    var yourHit = '';
    console.log (skill);
    console.log (yourHit);
 
    vm.char = {
-     name: 'Bob Cat',
-     skill: 'easy'
+     name: 'Dalai Llama',
+     about: 'Loves high-fives, go on high-five me!  Pleeeease!',
+     skill: 'easy',
+     image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKm7jteUC6Uy_BQtQR7WpkHwrTkniRwu5Ngg-aW-2W1lO1kyIDwA'
    };
 
   vm.count = HitsService.counterValue();
