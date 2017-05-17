@@ -1,4 +1,4 @@
-myApp.service('GetHits', function(){
+myApp.service('HitsService', function(){
 
   var counter = 0;
   var hitsCounter = 0;
@@ -17,7 +17,16 @@ myApp.service('GetHits', function(){
     console.log(hitsCounter);
     hitsCounter++;
     return hitsCounter;
-  }; 
+  };
+
+  //return both counter values
+  this.counterValue = function (){
+    return counter;
+  };
+  this.hitsCounterValue = function (){
+    return hitsCounter;
+  };
+  
 
   //return random number
   this.randomNum = function randomNum(min, max){

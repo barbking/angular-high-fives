@@ -8,19 +8,31 @@
     <script src="/vendor/angular.min.js" type="text/javascript"></script>
     <script src="/vendor/angular-route.min.js" type="text/javascript"></script>
     <script src="/scripts/client.js" type="text/javascript"></script>
-    <script src="/scripts/services.js" type="text/javascript"></script>
+    <script src="/scripts/services/hits.service.js" type="text/javascript"></script>
+    <script src="/scripts/controllers/controller1.js" type="text/javascript"></script>
+    <script src="/scripts/controllers/controller2.js" type="text/javascript"></script>
+    <script src="/scripts/controllers/controller3.js" type="text/javascript"></script>
+    <base href="/">
   </head>
   <body ng-app="myApp">
-    <div ng-controller="HighFiveController as hf">
-      <h2>If you're a cool cat, click to high five me!<button ng-click="hf.addHit()">Click to High Five Me!</button></h2>
-
-        <img class="img-rounded" width="400" height="350" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F1funny.com%2Fwp-content%2Fuploads%2F2010%2F08%2Fhi-five-cat.jpg&f=1">
-        <!-- <input type="text" placeholder="name" ng-model="hf.nameIn" /> -->
-      <div class="container row results">
-          <div class="col-large-3"><span>Hit results: {{ hf.description }}</span></div><br>
-          <div class="col-large-3">High Five Attempts:{{hf.count}}</div><br>
-          <div class="col-large-3">High Five Count:{{hf.hitsCounter}}</div><br>
+    <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/character1">High Five a Cat</a></li>
+          <li><a href="/character2">High Five a Llama</a></li>
+          <li><a href="/character3">High Five a Panda</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
+  </header>
+  <div>
+    <ng-view></ng-view>
+      </div>
+    <footer class="well well-sm">&#174 Kingster Digital. All rights reserved.</footer>
   </body>
 </html>

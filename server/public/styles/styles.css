@@ -15,9 +15,28 @@ button {
   margin: 10px;
   padding: 5px;
 }
-jumbotron {
+nav {
+  margin-bottom: 50px;
+  background-color: blue;
+}
+header {
+  height: 100px;
+}
+footer{
+    position:fixed;
+    height:30px;
+    background-color:red;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 15px;
+    text-align: right;
+  }
+.jumbotron {
   /*background-color: #5b504a;*/
   background:transparent;
+  text-align: center;
+  height: 60px;
 }
 .results {
   margin-top: 100px;
