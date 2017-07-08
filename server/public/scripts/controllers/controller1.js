@@ -10,7 +10,7 @@ myApp.controller( 'HighFiveController1',['HitsService',function(HitsService){
 
    vm.char = {
      name: 'Dalai Llama',
-     about: 'Loves high-fives, go on high-five me!  Pleeeease!',
+     about: 'Loves high-fives, go on, high-five me!  Pleeeease!',
      skill: 'easy',
      image:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKm7jteUC6Uy_BQtQR7WpkHwrTkniRwu5Ngg-aW-2W1lO1kyIDwA'
    };
